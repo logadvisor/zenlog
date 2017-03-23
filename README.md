@@ -1,7 +1,7 @@
 # zenlog
-log replay utility to replay old log data back via UDP.  Pick source and destination IPs and Ports, Message rates (minimum and maximum) per second, and number of messages to send.  This is typically used for testing log collection software.
+log replay utility to replay old log data back via UDP.  Pick source and destination IPs and Ports, Message rates (minimum and maximum) per second, and number of messages to send.
 
-###Options###
+### Options
     -s src[+count][:port]
     -d dst[:port]
     -m min_mps
@@ -13,6 +13,6 @@ log replay utility to replay old log data back via UDP.  Pick source and destina
     -f logfile
 
 
-Example:
+### Example:
 
 $ zenlog -s 192.168.0.1 -d 127.0.0.1:514 -f example.log -m 5 -M 50
